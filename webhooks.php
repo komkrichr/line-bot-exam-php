@@ -190,7 +190,7 @@ if (!is_null($events['events'])) {
 			}
 			
 			if (strpos($msg_reply, '/Cancel') !== false) {
-				$url = 'http://ka.vmercury.com/raid/delete.asp';
+				$url = 'http://43.254.133.199/raid/delete.asp';
 				$ch = curl_init( $url );
 				$myvars = 'GymsName='.$AscMessage;
 				$headers = ['Content-Type' => 'application/x-www-form-urlencoded', 'charset' => 'windows-874'];
@@ -205,7 +205,7 @@ if (!is_null($events['events'])) {
 			}
 
 			if (strpos($msg_reply, '/ExRaid') !== false) {
-				$url = 'http://ka.vmercury.com/raid/exraid.asp';
+				$url = 'http://43.254.133.199/raid/exraid.asp';
 				$ch = curl_init( $url );
 				$myvars = 'GymsName='.$AscMessage;
 				$headers = ['Content-Type' => 'application/x-www-form-urlencoded', 'charset' => 'windows-874'];
@@ -220,7 +220,7 @@ if (!is_null($events['events'])) {
 			}
 			
 			if (strpos($msg_reply, '/CancelExRaid') !== false) {
-				$url = 'http://ka.vmercury.com/raid/cancel_exraid.asp';
+				$url = 'http://43.254.133.199/raid/cancel_exraid.asp';
 				$ch = curl_init( $url );
 				$myvars = 'GymsName='.$AscMessage;
 				$headers = ['Content-Type' => 'application/x-www-form-urlencoded', 'charset' => 'windows-874'];
@@ -235,7 +235,7 @@ if (!is_null($events['events'])) {
 			}
 			
 			if (strpos($msg_reply, '/!Send') !== false) {
-				$url = 'http://ka.vmercury.com/raid/send.asp';
+				$url = 'http://43.254.133.199/raid/send.asp';
 				$ch = curl_init( $url );
 				$headers = ['Content-Type' => 'application/x-www-form-urlencoded', 'charset' => 'windows-874'];
 				curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -249,7 +249,7 @@ if (!is_null($events['events'])) {
 			}
 			
 			if (strpos($msg_reply, '/!Update') !== false) {
-				$url = 'http://ka.vmercury.com/raid/send.asp';
+				$url = 'http://43.254.133.199/raid/send.asp';
 				$myvars = 'chkNew=Y';
 				$ch = curl_init( $url );
 				$headers = ['Content-Type' => 'application/x-www-form-urlencoded', 'charset' => 'windows-874'];
@@ -415,7 +415,7 @@ if (!is_null($events['events'])) {
 
 					//Save Location
 					//$msg_reply='lo/ราช องค์/08.00';
-					$url = 'http://ka.vmercury.com/raid/ar1.asp';
+					$url = 'http://43.254.133.199/raid/ar1.asp';
 
 					$msg_reply=str_replace(' ','A-A-A',$msg_reply);
 

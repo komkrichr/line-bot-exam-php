@@ -51,7 +51,7 @@ if (!is_null($events['events'])) {
 			}
 			
 
-			if ((strpos($msg_reply, 'Co-ords') !== false) || (strpos($msg_reply, 'EXGYM') !== false)  || (strpos($msg_reply, 'Boosted') !== false)  || (strpos($msg_reply, 'Exraid') !== false) || (strpos($msg_reply, 'Ex Raid') !== false) || (strpos($msg_reply, 'EX RAID') !== false)) {
+			if ((strpos($msg_reply, '.')==true) && (strpos($msg_reply, ',')==true) && ((strpos($msg_reply, 'Co-ords') !== false) || (strpos($msg_reply, 'EXGYM') !== false)  || (strpos($msg_reply, 'Boosted') !== false)  || (strpos($msg_reply, 'Exraid') !== false) || (strpos($msg_reply, 'Ex Raid') !== false) || (strpos($msg_reply, 'EX RAID') !== false))) {
 				$name =  $msg_reply;
 				$inputimage =  "";
 				$sTokenDev="NEvWA3b8STpVWM3HOFUVwulGlzQPWnnw5m0xNlXw8MW";			
@@ -116,7 +116,7 @@ if (!is_null($events['events'])) {
 				$msg_reply="";
 			}
 			
-			if ((strpos($msg_reply, '.')==true) && ((strpos($msg_reply, 'IV100') !== false) || (strpos($msg_reply, '100IV') !== false) || (strpos($msg_reply, 'LV3') !== false) || (strpos($msg_reply, 'L3') !== false))) {
+			if ((strpos($msg_reply, '.')==true) && (strpos($msg_reply, ',')==true) && ((strpos($msg_reply, 'IV100') !== false) || (strpos($msg_reply, '100IV') !== false) || (strpos($msg_reply, 'LV3') !== false) || (strpos($msg_reply, 'L3') !== false))) {
 				$name =  $msg_reply;
 				$inputimage =  "";
 				$sTokenDev="NEvWA3b8STpVWM3HOFUVwulGlzQPWnnw5m0xNlXw8MW";			
@@ -460,4 +460,4 @@ if (!is_null($events['events'])) {
 	}
 }
 
-echo "<br>007";
+echo "<br>1108";
